@@ -1,0 +1,19 @@
+# Editor
+.vscode/
+
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Claude
+CLAUDE.md
+DESIGN_NOTES.md
+/temporal-predictor/purpose.md
+claudeAnswers.md
+
+# Notes
+selfNotes.md
+ProjectIdeas.md
