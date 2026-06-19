@@ -14,7 +14,9 @@ A single-layer **ConvLSTM** watches the live camera and learns *while* watching:
 each frame it measures how wrong its last guess was (that error map **is** the
 surprise), takes one online gradient step, then guesses the next frame. Motion it
 has seen becomes predictable and fades to black on its own — only *failed*
-predictions stay bright. The **oddball experiment** turns that "it fades" vibe
+predictions stay bright. 
+
+The **oddball experiment** turns that "it fades" vibe
 into a measurement: feed a repeating synthetic stimulus until surprise flattens,
 then break the pattern once, and the logged curve shows both a decaying
 repetition-suppression envelope and a one-off mismatch spike — the classic oddball
@@ -27,4 +29,3 @@ paradigm.
 - **Code:** [main.py](temporal-predictor/main.py) (live loop),
   [oddball.py](temporal-predictor/oddball.py) (the experiment)
 - **Report:** [temporal-predictor-report.md](temporal-predictor/temporal-predictor-report.md)
-</content>
