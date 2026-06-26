@@ -18,9 +18,14 @@ claudeQuestions.md
 # Notes
 selfNotes.md
 ProjectIdeas.md
+_SHIP_CHECKLIST.md
 
 # Oddball graph — root scratch output, regenerated each run
 oddball_surprise.png
+
+# Screen recording and rendered demo — kept local, not committed
+demo.mp4
+demo.gif
 
 # NOTE: temporal-predictor/oddball_static.png and oddball_moving.png are intentionally
 # COMMITTED — they are the figures the report links to. Do NOT ignore them.

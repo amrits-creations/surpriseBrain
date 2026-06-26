@@ -8,7 +8,11 @@ expected this" (anything already learned fades to black, even while moving);
 **bright** = "I did not see this coming" (novel events flare, then fade on their
 own as the model learns them).
 
-## temporal-predictor *(built)*
+**Status: complete.** A hierarchical (stacked) extension was also tested; it
+underperformed — surprise washed out almost immediately and genuine novelty barely
+registered — so the single-layer model below is the result.
+
+## temporal-predictor
 
 A single-layer **ConvLSTM** watches the live camera and learns *while* watching:
 each frame it measures how wrong its last guess was (that error map **is** the

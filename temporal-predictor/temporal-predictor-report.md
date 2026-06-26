@@ -74,10 +74,22 @@ omission onset (0.133), decay to a trough of 0.011 during the omission, and a
 second spike on restoration (0.133). The trough fell below the moving baseline of
 0.026, because a **constant blank frame is more predictable than a moving bar**.
 
-## Limitations and next step
+## Limitations and conclusion
 
 This is a single-layer predictor operating directly on pixels. It can report only
-that pixel-level input changed, never that the *structure* or *kind* of pattern
-changed. Detecting higher-order, structural surprise requires a stacked predictor
-in which each layer predicts the activity of the layer below — the subject of the
-next project, the hierarchical-predictor.
+that pixel-level input changed — never that the *structure* or *kind* of pattern
+changed. The natural hypothesis is that stacking predictors, each layer predicting
+the activity of the layer below, would surface higher-order, structural surprise.
+
+That hierarchical version was built and tested. It did not improve on the single
+layer. On the oddball paradigm it produced consistently worse curves — the moving
+stimulus markedly so — and in the live demo it learned faster but washed the
+surprise signal out: surprise decayed almost immediately, and genuine, drastic
+changes in the scene barely registered on the map. The added predictive layer, in
+this implementation, suppressed the very signal the project exists to show rather
+than enriching it.
+
+So the single-layer temporal-predictor stands as the result. It does one thing and
+does it legibly: it turns "perception is prediction, attention is surprise" into
+something you can watch in real time, and measure on demand. That is where the
+project concludes.
